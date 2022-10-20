@@ -1,0 +1,100 @@
+.header {
+    padding-top: 40px;
+
+    height: 230px;
+
+    background-image: url(../images/home-320.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media screen and (min-width: 768px) {
+        height: 216px;
+
+        background-image: url(../images/home-768.jpg);
+    }
+    @media screen and (min-width: 1280px) {
+        background-image: url(../images/home-1280.jpg);
+    }
+}
+
+.nav {
+    display: flex;
+}
+.nav__list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-left: auto;
+}
+.nav__link {
+    color: $bgColor;
+
+    text-transform: uppercase;
+}
+.nav__link--current {
+    border-bottom: 3px solid $navAccentColor;
+}
+
+// FORM
+.form {
+    position: relative;
+    margin-top: 54px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 280px;
+
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 40px;
+
+        max-width: 336px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        max-width: 394px;
+    }
+}
+.form__input {
+    width: 100%;
+    border: none;
+    border-bottom: 0.5px solid $bgColor;
+    
+    color: $bgColor;
+    background-color: transparent;
+}
+.form__input::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    color: $bgColor;
+}
+.form__button {
+    position: absolute;
+    top: 2px;
+    right: 0;
+
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    background-color: transparent;
+
+}
+
+.text-error {
+    margin-top: 16px;
+
+    font-size: 14px;
+    font-weight: 400;
+
+    color: $navAccentColor;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 20px;
+
+        text-align: center;
+    }
+}
+.is-hidden {
+    display: none;
+}

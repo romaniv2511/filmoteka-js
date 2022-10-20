@@ -1,0 +1,15 @@
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo__text {
+    margin-left: 8px;
+    font-size: 30px;
+    line-height: 1.16;
+
+    color: $bgColor;
+
+    @media screen and (max-width: 767px) {
+        display: none; 
+    }
+}
