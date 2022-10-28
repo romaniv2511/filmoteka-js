@@ -1,0 +1,32 @@
+.films__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.films__item {
+    max-width: calc((100% - 32px) / 3);
+}
+
+.films__img {
+    
+    border-radius: 5px;
+}
+.films__content {
+    margin-top: 10px;
+}
+
+
+.pagination__list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    font-size: 30px;
+
+    cursor: pointer;
+}
+.pagination__list li.active,
+.pagination__list li:hover,
+.pagination__list li:focus {
+    background: $accentColor;
+}

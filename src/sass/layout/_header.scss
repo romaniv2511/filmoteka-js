@@ -3,17 +3,34 @@
 
     height: 230px;
 
-    background-image: url(../images/home-320.jpg);
+    
     background-repeat: no-repeat;
     background-position: center;
 
     @media screen and (min-width: 768px) {
         height: 216px;
+    }
+}
+.header--home {
+    background-image: url(../images/home-320.jpg);
 
+    @media screen and (min-width: 768px) {
         background-image: url(../images/home-768.jpg);
     }
+
     @media screen and (min-width: 1280px) {
         background-image: url(../images/home-1280.jpg);
+    }
+}
+.header--library {
+    background-image: url(../images/library-320.jpg);
+
+    @media screen and (min-width: 768px) {
+        background-image: url(../images/library-768.jpg);
+    }
+
+    @media screen and (min-width: 1280px) {
+        background-image: url(../images/library-1280.jpg);
     }
 }
 
